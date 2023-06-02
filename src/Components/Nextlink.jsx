@@ -1,10 +1,9 @@
-import React from 'react';
-
+import React from "react";
+import { useLoaderData } from "react-router-dom";
 
 const Nextlink = () => {
-const uri= 'https://showrove-roy.vercel.app/'
-
-    return window.location.replace(`${uri}`);
+  const link = useLoaderData();
+  return window.location.replace(`${link[0]?.originalLink}`);
 };
 
 export default Nextlink;

@@ -10,7 +10,9 @@ export const router = createBrowserRouter([
     children: [
       { path: "/", element: <App></App> },
       {
-        path: "/next",
+        path: "/next/:id",
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/link/${params.id}`),
         element: <Nextlink></Nextlink>,
       },
     ],
