@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
       {
         path: "/next/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/link/${params.id}`),
+          fetch(`https://link-shortener-server.vercel.app/link/${params.id}`),
         element: <Nextlink></Nextlink>,
       },
     ],
