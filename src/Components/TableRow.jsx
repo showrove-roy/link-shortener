@@ -45,10 +45,10 @@ const TableRow = ({ index, link,setListUp ,listUp}) => {
             checked={selected}
           />
         </th>
-        <td>http://127.0.0.1:5173/next/{link?._id}</td>
+        <td>https://link-shorts.vercel.app/next/{link?._id}</td>
         <td className='flex gap-3'>
           {/* copy icon */}
-          <CopyToClipboard text={`http://127.0.0.1:5173/next/${link?._id}`}>
+          <CopyToClipboard text={`https://link-shorts.vercel.app/next/${link?._id}`}>
             <div
               onClick={handelCopy}
               onMouseEnter={handelMouseOut}

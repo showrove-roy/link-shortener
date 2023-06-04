@@ -75,11 +75,11 @@ const InputLink = ({ setListUp, listUp }) => {
           </form>
           {originalLink && (
             <div className='mt-10 flex gap-5'>
-              <h1>http://127.0.0.1:5173/next/{originalLink}</h1>
+              <h1>https://link-shorts.vercel.app/next/{originalLink}</h1>
               {/* copy icon */}
 
               <CopyToClipboard
-                text={`http://127.0.0.1:5173/next/${originalLink}`}>
+                text={`https://link-shorts.vercel.app/next/${originalLink}`}>
                 <div
                   onClick={handelCopy}
                   onMouseEnter={handelMouseOut}
